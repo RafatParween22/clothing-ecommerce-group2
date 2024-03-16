@@ -1,1 +1,2 @@
-# food-ecoomerce-group1
+# Cloths-ecoomerce-group1
+# adding Footer
