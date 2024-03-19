@@ -5,11 +5,11 @@ const totalSlides = slides.length;
 function showSlide(i) {
 	if (i < 0) {
 		slideI = totalSlides - 1;
-	} else if (i>= totalSlides) {
+	} else if (i >= totalSlides) {
 		slideI = 0;
 	}
 
-	const offset = -slideI* 100;
+	const offset = -slideI * 100;
 	document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
 }
 
