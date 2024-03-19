@@ -103,7 +103,7 @@ const Api=[
     },
     {
         img:"https://i.ibb.co/RcFtHx9/T-shirt1.webp",
-        rating:5.6,
+        rating:1.0,
         price:350,
         type:"T-Shirt"
     },
@@ -121,13 +121,13 @@ const Api=[
     },
     {
         img:"https://i.ibb.co/nLwVd6m/T-shirt-4.webp",
-        rating:4.8,
+        rating:10,
         price:250,
         type:"T-Shirt"
     },
     {
         img:"https://i.ibb.co/PrjxnVF/T-shirt-5.webp",
-        rating:4.9,
+        rating:6.1,
         price:650,
         type:"T-shirt"
     },
