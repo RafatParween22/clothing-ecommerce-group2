@@ -146,14 +146,14 @@ document.getElementById('searchBar').addEventListener('keyup', (e) => {
 	if (searchData === 'shirt') {
 		const shirtData = product.filter(item => item.type.toLowerCase() === 'shirt');
 		displayItem(shirtData);
-	} else if (searchData === 't-shirt') { // Corrected to lowercase "t-shirt"
+	} else if (searchData === 't-shirt') { 
 		const tshirtData = product.filter(item => item.type.toLowerCase() === 't-shirt');
 		displayItem(tshirtData);
-	} else if (searchData === 'jeanes') { // Corrected to lowercase "jeanes"
+	} else if (searchData === 'jeanes') { 
 		const jeansData = product.filter(item => item.type.toLowerCase() === 'jeanes');
 		displayItem(jeansData);
-	} else if (searchData === 'lowercase') { // Corrected to lowercase "lowercase"
-		const lowerData = product.filter(item => item.type.toLowerCase() === 'lowercase');
+	} else if (searchData === 'lower') { 
+		const lowerData = product.filter(item => item.type.toLowerCase() === 'lower');
 		displayItem(lowerData);
 	}
 });

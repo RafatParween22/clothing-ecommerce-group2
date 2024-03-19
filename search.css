@@ -28,6 +28,10 @@ body {
     justify-content: space-between;
 }
 
+.sidebody{
+	height: 69vh;
+}
+
 .fa-circle {
     color: orangered;
 }
