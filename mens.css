@@ -36,6 +36,7 @@ body {
 
 
 .slide {
+    border-radius: 1rem;
     width: 60vw;
     height: 30vw;
     background-image: url(https://i.ibb.co/yWZxhRy/img1.jpg);
@@ -557,6 +558,47 @@ footer {
 
 
 
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.product-card{
+    border-radius: 5px;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.product-card img {
+    border-radius: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.buy-now-button {
+    background-color: #B4D5D5;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 0.7rem;
+}
+
+.buy-now-button:hover {
+    background-color:#E1E1D5;
+}
+
+
+
+.cart{
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
 
     .shoping-main{
@@ -648,7 +690,9 @@ footer {
         gap: 1rem;
     }
 
-
+    .box{
+        gap: 1rem;
+    }
     .goog {
         margin-top: 1rem;
         height: auto;
@@ -669,7 +713,6 @@ footer {
     }
     .about,.about2{
         width: 100%;
-        gap: 1rem;
         flex-direction: column;
     }
 
