@@ -442,73 +442,73 @@ const product = [
 		image: "https://ibb.co/zPzX4sc",
 		rating:5.0,
 		price: 999,
-		type: "Combo of 3 T-shirt"
+		type: "Comboof3T-shirt"
 	},
 	{
 		image: "https://ibb.co/56pXGWj",
 		rating:3.5,
 		price: 499,
-		type: "Top for baby girl"
+		type: "Topforbabygirl"
 	},
 	{
 		image: "https://ibb.co/drBNNW7",
 		ratin:5.3,
 		price: 99,
-		type: "top for baby girl"
+		type: "topforbabygirl"
 	},
 	{
 		image: "https://ibb.co/bW1FSRN",
 		rating:4.6,
 		price: 999,
-		type: "White top for girls"
+		type: "Whitetopforgirls"
 	},
 	{
 		img: "https://ibb.co/XLPXF3F",
 		rating:2.3,
 		price: 999,
-		type: "small size of Multicolour top"
+		type: "smallsizeofMulticolour top"
 	},
 	{
 		image: "https://ibb.co/g6YzQ9D",
 		rating:3.2,
 		price: 2999,
-		type: "small size of T-shirt"
+		type: "smallsizeofT-shirt"
 	},
 	{
 		image: "https://ibb.co/Fh5Vyzd",
 		rating:6.7,
 		price: 2499,
-		type: "small size of lehenga"
+		type: "smallsizeoflehenga"
 	},
 	{
 		image: "https://ibb.co/WWf3mKQ",
 		rating:5.6,
 		price: 2999,
-		type: "small size of lehenga"
+		type: "smallsizeoflehenga"
 	},
 	{
 		image: "https://ibb.co/VwZR2W1",
 		rating:7.3,
 		price: 499,
-		type: "small size of Kurta"
+		type: "smallsizeofKurta"
 	},
 	{
 		image: "https://i.ibb.co/YpznM9P/asset-13.jpg",
 		rating: 2.2,
 		price: 2100,
-		type: "small size of Kurta"
+		type: "smallsizeofKurta"
 	},
 	{
 		image: "https://ibb.co/2hSf2P2",
 		rating:6.9,
 		price: 2499,
-		type: "small size of lehenga"
+		type: "smallsizeoflehenga"
 	},
 	{
 		image: "https://ibb.co/2sdktTm",
 		rating:3.7,
 		price: 2999,
-		type: "small size of Kurta"
+		type: "smallsizeofKurta"
 	},
 	{
 		img: "https://ibb.co/K5TVzh4",
@@ -519,25 +519,25 @@ const product = [
 		image: "https://ibb.co/vPSwx9J",
 		rating:6.0,
 		price: 2999,
-		type: "small size of kurta"
+		type: "smallsizeofkurta"
 	},
 	{
 		image: "https://ibb.co/C9f1ntC",
 		rating:4.9,
 		price: 2999,
-		type: "small size of lehanga"
+		type: "smallsizeoflehanga"
 	},
 	{
 		image: "https://ibb.co/XZSG5JY",
 		rating:6.7,
 		price: 999,
-		type: "small size of jeanes"
+		type: "smallsizeofjeanes"
 	},
 	{
 		image: "https://ibb.co/3fdgryY",
 		rating:3.5,
 		price: 499,
-		type: "small size of jeanes"
+		type: "smallsizeofjeanes"
 	},
 	{
 		image: "https://ibb.co/ZVCkGdv",
@@ -585,11 +585,14 @@ document.getElementById('searchBar').addEventListener('keyup', (e) => {
 		const smallkurtaData = product.filter(item => item.type.toLowerCase() === "smallsizeofjeanes");
 		displayItem(smallkurtaData);
 	} else if (searchData === "White top for girls") {
-		const whiteData = product.filter(item => item.type.toLowerCase() === "White top for girls");
+		const whiteData = product.filter(item => item.type.toLowerCase() === "Whitetopforgirls");
 		displayItem(whiteData);
-	} else if (searchData === "top for baby girl") {
-		const topData = product.filter(item => item.type.toLowerCase() === "grown");
+	} else if (searchData === "topforbabygirl") {
+		const topData = product.filter(item => item.type.toLowerCase() === "topforbabygirl");
 		displayItem(topData);
+	} else if (searchData === "Comboof3T-shirt") {
+		const comoData = product.filter(item => item.type.toLowerCase() === "Comboof3T-shirt");
+		displayItem( comoData);
 	} 
 });
 
