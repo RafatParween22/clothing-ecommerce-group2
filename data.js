@@ -131,11 +131,4 @@ const data=[
         price:650,
         type:"swaggish"
     },
-    {
-        img:"https://i.ibb.co/DMrLcfV/asset-42.jpg",
-        rating:4.1,
-        price:300,
-        type:"Toochki"
-    },
-
 ]
