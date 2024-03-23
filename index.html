@@ -1,128 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clothing Ecommerce Website</title>
+	<link rel="stylesheet" type="text/css" href="index.css" />
 </head>
+
 <body>
-    <section id="testimonials">
-        <h2 class="testimonial-title">What Our Customers Say</h2>
-        <div class="testimonial-container container">
-            <div class="testimonial-box">
-                <div class="customer-detail">
-                    <div class="customer-photo">
-                        <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
-                        <p class="customer-name">Joo</p>
-                    </div>
-                </div>
-                <div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <p class="testimonial-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ad commodi iste enim nostrum accusantium sequi in corporis odio praesentium 
-                    cupiditate fugit esse ullam quisquam, tempora quidem nam debitis accusamus distinctio?
-                </p>
+	<div class="navbar"></div>
+	<div class="header">
+		<img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2024/3/13/160142ae-a9e1-4700-947c-8a9eac1776fc1710327780873-COUPON-STRIP.jpg"
+			class="offer" alt="offer">
+	</div>
+	<div class="slider">
+		<div class="slides">
+			<img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/3f6d1e2a-5ef6-4921-be5d-443a11b11d801651599573985-Dresses_Desk.jpg"
+				alt="first slide">
+			<img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/17/f1874a9d-c423-44d3-a529-6c63521d6f991650181498608-Sarees_Desk.jpg"
+				alt="second Slide">
+			<img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/a20271c6-249f-480b-bcc7-1b150516e54e1651599573998-Dressberry_Desk.jpg"
+				alt="third Slide">
+			<img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/e384cb32-690c-4ccf-a6cb-61df36960bb21651599573972-Workwear_Desk.jpg"
+				alt="four slide">
+			<img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/10/c74bac2c-e09d-484f-8e25-c07747c867241649530728935-Tops---Tees_Desk.jpg"
+				alt="five slide">
+			<img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/10/7feef02b-0072-4c1b-b83d-4e46a5d93c6b1649530621162-Sangria_Desk_Banner.jpg"
+				alt="six Slide">
+		</div>
+		<button class="prev" onclick="prevSlide()">Prev</button>
+		<button class="next" onclick="nextSlide()">Next</button>
+	</div>
+	<body>
+		<h1>Recommended Clothes</h1>
+		
+		<div class="clothes-container">
+			<div class="clothes-item">
+				<img src="Asstes/2w.avif" alt="" height="250px" width="500px">
+				<p>Price: $50</p>
+				<button>Add to Wishlist</button>
+			</div>
+	
+	
+			<div class="clothes-item">
+				<img src="Asstes/1w.webp" alt="" height="250px" width="500px">
+				<p>Price: $50</p>
+				<button>Add to Wishlist</button>
+			</div>
+	
+			<div class="clothes-item">
+				<img src="Asstes/3w.avif" alt="" height="250px" width="500px">
+				<p>Price: $50</p>
+				<button>Add to Wishlist</button>
+			</div>
+	
+			<div class="clothes-item">
+				<img src="Asstes/1c.jpg" alt="" height="250px" width="500px">
+				<p>Price: $50</p>
+				<button>Add to Wishlist</button>
+			</div>
+	
+			<div class="clothes-item">
+				<img src="Asstes/7c.jpg" alt="" height="250px" width="500px">
+				<p>Price: $50</p>
+				<button>Add to Wishlist</button>
+			</div>
+	
+			<div class="clothes-item">
+				<img src="Asstes/3c.jpg" alt="" height="250px" width="500px">
+				<p>Price: $50</p>
+				<button>Add to Wishlist</button>
+			</div>
+	
+	
+			<div class="clothes-item">
+				<img src="Asstes/1m.webp" alt="" height="250px" width="500px">
+				<p>Price: $50</p>
+				<button>Add to Wishlist</button>
+			</div>
+	
+			<div class="clothes-item">
+				<img src="Asstes/2m.webp" alt="" height="250px" width="500px">
+				<p>Price: $50</p>
+				<button>Add to Wishlist</button>
+			</div>
+	
+			<div class="clothes-item">
+				<img src="Asstes/3m.webp" alt="" height="250px" width="500px">
+				<p>Price: $50</p>
+				<button>Add to Wishlist</button>
+			</div>
+	
+	
+		  
+		 
+	
+	
+		</div>
+	
 
-            </div>
-            <div class="testimonial-box">
-                <div class="customer-detail">
-                    <div class="customer-photo">
-                        <img src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg" alt="" />
-                        <p class="customer-name">Anna</p>
-                    </div>
-                </div>
-                <div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <p class="testimonial-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ad commodi iste enim nostrum accusantium sequi in corporis odio praesentium 
-                    cupiditate fugit esse ullam quisquam, tempora quidem nam debitis accusamus distinctio?
-                </p>
+	<section id="testimonials">
+		<h2 class="testimonial-title">What Our Customers Say</h2>
+		<div class="testimonial-container container">
+			<div class="testimonial-box">
+				<div class="customer-detail">
+					<div class="customer-photo">
+						<img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
+						<p class="customer-name">Joo</p>
+					</div>
+				</div>
+				<div class="star-rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+				</div>
+				<p class="testimonial-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Ad commodi iste enim nostrum accusantium sequi in corporis odio praesentium
+					cupiditate fugit esse ullam quisquam, tempora quidem nam debitis accusamus distinctio?
+				</p>
 
-            </div>
+			</div>
+			<div class="testimonial-box">
+				<div class="customer-detail">
+					<div class="customer-photo">
+						<img src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg" alt="" />
+						<p class="customer-name">Anna</p>
+					</div>
+				</div>
+				<div class="star-rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+				</div>
+				<p class="testimonial-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Ad commodi iste enim nostrum accusantium sequi in corporis odio praesentium
+					cupiditate fugit esse ullam quisquam, tempora quidem nam debitis accusamus distinctio?
+				</p>
 
-            <div class="testimonial-box">
-                <div class="customer-detail">
-                    <div class="customer-photo">
-                        <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
-                        <p class="customer-name">John</p>
-                    </div>
-                </div>
-                <div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
+			</div>
+			<div class="testimonial-box">
+				<div class="customer-detail">
+					<div class="customer-photo">
+						<img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+						<p class="customer-name">John</p>
+					</div>
+				</div>
+				<div class="star-rating">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+				</div>
+				<p class="testimonial-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Ad commodi iste enim nostrum accusantium sequi in corporis odio praesentium
+					cupiditate fugit esse ullam quisquam, tempora quidem nam debitis accusamus distinctio?
+				</p>
 
-        </div>
-                </div>
-                <p class="testimonial-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ad commodi iste enim nostrum accusantium sequi in corporis odio praesentium 
-                    cupiditate fugit esse ullam quisquam, tempora quidem nam debitis accusamus distinctio?
-                </p>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer-container">
+			<div class="footer-section">
+				<h3>About Us</h3>
+				<ul>
+					<li><a href="#">Company Overview</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Stories</a></li>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<h3>Help</h3>
+				<ul>
+					<li><a href="#">Payments</a></li>
+					<li><a href="#">Shipping</a></li>
+					<li><a href="#">Cancellation & Returns</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<h3>Policy</h3>
+				<ul>
+					<li><a href="#">Return Policy</a></li>
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Privacy</a></li>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<h3>Social</h3>
+				<ul>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">LinkedIn</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>&copy; 2024 Ecommerce Pvt. Ltd. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<script src="index.js"></script>
 
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <ul>
-                    <li><a href="">Company Overview</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Stories</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Help</h3>
-                <ul>
-                    <li><a href="">Payments</a></li>
-                    <li><a href="">Shipping</a></li>
-                    <li><a href="">Cancellation & Returns</a></li>
-                    <li><a href="">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Policy</h3>
-                <ul>
-                    <li><a href="">Return Policy</a></li>
-                    <li><a href="">Terms of Use</a></li>
-                    <li><a href="">Security</a></li>
-                    <li><a href="">Privacy</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Social</h3>
-                <ul>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">LinkedIn</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2024 Ecommerce Pvt. Ltd. All Rights Reserved.</p>
-        </div>
-    </footer>
 </body>
+
 </html>

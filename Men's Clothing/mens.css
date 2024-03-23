@@ -11,7 +11,7 @@ body {
 
 .shoping-main{
     width: 100vw; 
-    height:10vh ;
+    height:15vh ;
     background: rgba(243, 243, 243);
     text-align: center;
     font-size: 3rem;
@@ -40,6 +40,7 @@ body {
     width: 60vw;
     height: 30vw;
     background-image: url(https://i.ibb.co/yWZxhRy/img1.jpg);
+
     background-size: 100% 100%;
     box-shadow: 1px 2px 10px 10px rgba(0, 0, 0, .5);
     animation: slider 10s infinite 7s linear;
@@ -83,31 +84,6 @@ body {
 }
 
 
-#paras {
-    height: 100vh;
-    width: 100vw;
-    background: rgba(243, 243, 243);
-
-
-}
-
-
-
-
-.clap {
-    height: 40%;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.cen {
-    height: 50%;
-    width: 90%;
-    text-align: center;
-}
 
 .Yadav {
     font-size: 2rem;
@@ -115,21 +91,28 @@ body {
 }
 
 
-
-
 .Yadavji {
     font-size: 1.8rem;
 }
 
 
-.F_anime {
-    padding-top: 2rem;
+.F_anime_main{
+    height: 192vh;
+    width: 100vw;
+}
+
+
+.F_anime1,.F_anime2 {
+    margin-top: 1rem;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    height: 60%;
+    height: 93vh;
     background: rgba(243, 243, 243);
 
+}
+.F_anime2{
+    margin-top: 0;
 }
 
 
@@ -138,16 +121,16 @@ body {
 
 .wrapper {
     border-radius: 1rem;
-    width: 26rem;
-    height: 30rem;
+    width: 24rem;
+    height: 31rem;
     position: relative;
     border-radius: 5%;
     cursor: pointer;
 }
 
 .best {
-    height: 30rem;
-    width: 26rem;
+    width: 24rem;
+    height: 31rem;
     object-fit: cover;
     border-radius: 5%;
 
@@ -178,14 +161,15 @@ body {
 }
 
 
+
 .txt {
     position: absolute;
     top: 0;
     left: 0;
     color: white;
     background: #625555;
-    width: 26rem;
-    height: 30rem;
+    width: 24rem;
+    height: 31rem;
     text-align: center;
     padding: 0 0;
     border-radius: 5%;
@@ -214,7 +198,7 @@ body {
 
 .best-img {
     height: 17rem;
-    width: 26rem;
+    width: 24rem;
     object-fit: cover;
     border-radius: 5%;
 }
@@ -261,12 +245,9 @@ body {
 
 
 
-
-
-
 #bard {
-    height: 140vh;
-    width: 110vw;
+    height: 196vh;
+    width: 100vw;
     font-size: 10px;
     background: rgba(243, 243, 243);
 
@@ -274,11 +255,10 @@ body {
 }
 
 .rahul {
-    height: 45%;
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     background: rgba(243, 243, 243);
     position: relative;
@@ -293,6 +273,7 @@ body {
     width: 49.9rem;
     border-radius: 5%;
     flex-wrap: wrap;
+
 }
 
 .bst {
@@ -326,7 +307,7 @@ body {
 
 
 #container {
-    height: 150vh;
+    height: 160vh;
     width: 100vw;
     background: rgba(243, 243, 243);
 }
@@ -342,36 +323,31 @@ h1 {
 
 
 
-.nag {
-    margin-top: 3rem;
+.nag,.endra{
     width: 100%;
+    height: 45%;
     display: flex;
-    gap: 3rem;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
+
 .endra {
-    margin-top: 3rem;
-    width: 100%;
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    flex-wrap: wrap;
+    height: 50%;
 
 }
 
 .box {
     cursor: pointer;
     border-radius: 5%;
-    width: 25rem;
-    height: 32.5rem;
+    width: 18rem;
+    height: 24.3rem;
     background-color: white;
     color: black;
 }
 
 .jeans-img {
-    height: 19.7rem;
+    height: 10rem;
     border-radius: 1rem;
     object-fit: cover;
     width: 100%;
@@ -382,9 +358,8 @@ h1 {
 }
 
 
-
 .goog {
-    height: 130vh;
+    height: 148vh;
     width: 100vw;
     background: rgba(243, 243, 243);
 
@@ -411,39 +386,23 @@ h1 {
     width: 75%;
 }
 
-.t-shirt{
-    width: 100%;
-    height: 3.4rem;
 
-}
-
-.navigation-tshirt{
-    text-align: center;
-    font-size: 3.4rem;
-    color: #625555;
-    margin-bottom: 1rem;
-
-}
-
-.about {
+.about,.about2 {
     height: 49%;
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-
-
+    justify-content: space-evenly;
 
 }
 
 .t-first{
-    height: 95%;
+    height: 90%;
     width: 30%;
     border-radius: 0.5rem;
 }
 
 .t-first-img{
-    height: 18rem;
+    height: 8rem;
     width: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
@@ -456,13 +415,9 @@ h1 {
 
 
 .about2 {
-    height: 49%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-
+    margin-top: 1rem;
 }
+
 
 
 #testimonials {
@@ -623,11 +578,16 @@ footer {
 
 
 
-    .F_anime {
+    .F_anime_main {
         margin-top: 1rem;
         height: auto;
         width: auto;
-        gap: 3rem;
+        
+    }
+    .F_anime1,.F_anime2{
+        gap: 1rem;
+        height: auto;
+        width: auto;
     }
 
     .wrapper {
@@ -635,7 +595,7 @@ footer {
     }
 
 
-    .best {
+    .best,.best-img {
         width: 100%;
 
     }
@@ -654,7 +614,7 @@ footer {
     #bard {
         height: auto;
         width: auto;
-        margin-left: 0;
+        margin-top: 1rem;
     }
 
     .bre {
@@ -714,6 +674,7 @@ footer {
     .about,.about2{
         width: 100%;
         flex-direction: column;
+        gap: 2rem;
     }
 
     .t-first{
