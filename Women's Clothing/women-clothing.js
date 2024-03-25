@@ -194,10 +194,10 @@ buyNowButtons.forEach(button => {
 
             const buyNowButton = document.createElement('button');
             buyNowButton.classList.add('buy-now-button');
-            buyNowButton.textContent = 'Buy Now';
+            buyNowButton.textContent = 'Remove Cart';
 
             buyNowButton.addEventListener('click', function () {
-                console.log("Buy Now button clicked for product:", matchedData);
+                productCard.remove()
             });
 
             productCard.appendChild(imageElement);
@@ -227,12 +227,75 @@ const main_part=document.querySelector(".hidden");
 
 const cart=document.querySelector(".cart");
 
-cart.addEventListener("click",()=>{
-
+cart.addEventListener("click",(event)=>{
+    event.preventDefault(); 
     main_part.style.display="none"
 
     main_cart_page.style.display=""
 
+})
+
+
+
+
+
+
+
+
+// signup-page
+function continueWithGoogle() {
+
+    alert("Continue with Google clicked");
+  }
+
+const signup = document.querySelector(".signup-main");
+const signup_anchor = document.querySelector(".signup-link");
+const main_home_page = document.querySelector(".main-home-page");
+
+signup.style.display = "none";
+
+signup_anchor.addEventListener("click", (event) => {
+    event.preventDefault(); 
+    main_part.style.display="none"
+    signup.style.display = "block"; 
+});
+
+const close_signup=document.querySelector(".signup-button-close")
+close_signup.addEventListener("click",()=>{
+  signup.style.display = "none";
+  main_part.style.display = "";
+})
+
+
+
+
+// login-page
+function continueWithGoogle() {
+  
+    alert("Continue with Google clicked");
+  }
+
+  function showForgotPassword() {
+
+    alert("Forgot Password clicked");
+  }
+
+const login_page=document.querySelector(".login-main-hidden")
+const login_anchor= document.querySelector(".login-page-link");
+
+login_page.style.display = "none";
+
+login_anchor.addEventListener("click", (event) => {
+    event.preventDefault(); 
+    main_part.style.display="none"
+    login_page.style.display = "block"; 
+});
+
+const close_login=document.querySelector(".login-button-close")
+close_login.addEventListener("click",()=>{
+  login_page.style.display = "none";
+  main_part.style.display = "";
+  
 })
 
 
