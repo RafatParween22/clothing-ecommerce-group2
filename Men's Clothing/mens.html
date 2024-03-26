@@ -4,40 +4,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clothing-ecommerce-group</title>
+    <title>clothing-ecommerce-website</title>
     <link rel="stylesheet" href="./mens.css">
 
 </head>
 
 <body>
-    <div>
-        <h2 class="cart">Add To cart</h2>
-    </div>
+
     <div class="products-container">
     </div>
+    
+    <div class="login-main-hidden">
+        <div class="login-main-container">
+            <div class="login-container">
+                <h2>Login to Your Account</h2>
+                <form id="login-form">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+
+                    <div class="form-footer">
+                        <button type="submit">Login</button>
+                        <button  type="submit" class="login-button-close">Close</button>
+                        <a href="#" class="forgot-password" onclick="showForgotPassword()">Forgot Password?</a>
+                    </div>
+                </form>
+                <div class="social-login">
+                    <button type="button" class="google-btn" onclick="continueWithGoogle()">Continue with Google</button>
+                </div>
+                <div class="login-account">
+                    <p>Don't have an account? <a href="">Sign up here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+    <div class="signup-main">
+        <div class="container">
+            <div class="signup-container">
+                <h2>Signup Your Account</h2>
+                <form id="signup-form">
+                    <input type="text" id="fullname" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="password" placeholder="Confirm Password" required>
+
+                    <div class="form-footer">
+                        <button type="submit">Sign Up</button>
+                        <button  type="submit" class="signup-button-close">Close</button>
+                    </div>
+                </form>
+                <div class="social-login">
+                    <button type="button" class="google-btn" onclick="continueWithGoogle()">Continue with
+                        Google</button>
+                </div>
+                <div class="login-link">
+                    Already have an account? <a href="">Login here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <nav>
+        <div class="main_nav">
+            <div>
+                <ul class="nav-ul">
+                    <li class="right">
+                        <img src="data:image/png;base64,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"
+                            alt="" class="nav-img">
+                        <a href="../search_bar/search.html" class="nav-anchor"> Home
+                        </a>
+                    </li>
+
+                    <li class="right">
+                        <img src="https://i.ibb.co/bgk5L3g/men.png" alt="" class="nav-img">
+                        <a href="../Men's Clothing/mens.html" class="nav-anchor">
+                            Men
+                        </a>
+                    </li>
+
+                    <li class="right">
+                        <img src="https://i.ibb.co/RNw39Z0/woman.png" alt="" class="nav-img">
+                        <a href="../Women's Clothing/women-clothing.html" class="nav-anchor">
+                            Women
+                        </a>
+                    </li>
+
+                    <li class="right">
+                        <img src="https://i.ibb.co/qRPTPzX/children.png" alt="" class="nav-img">
+                        <a href="../Children's Clothing/children.html" class="nav-anchor">
+                            Children
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="srch-btn">
+                <input class="search-input" type="search" name="" placeholder="Search here..."  id="searchBar" >
+                <div class="search-bar-icon">
+                    <img src="https://i.ibb.co/84PnKrF/search.png" alt="" class="nav-img">
+                </div>
+            </div>
+
+
+            <div>
+                <ul class="nav-ul">
+                    <li class="right">
+                        <img src="https://i.ibb.co/L62ZM8Q/user.png" alt="" class="nav-img">
+                        <a href="" class="nav-anchor  login-page-link">
+                            Login
+                        </a>
+                    </li>
+
+                    <li class="right">
+                        <img src="https://i.ibb.co/L62ZM8Q/user.png" alt="" class="nav-img">
+                        <a href="" class="nav-anchor signup-link">
+                            Signup
+                        </a>
+
+
+                    </li>
+
+                    <li class="right">
+                        <img src="https://i.ibb.co/wcwrT81/cart.png" alt="" class="nav-img">
+                        <a href="" class="nav-anchor cart">
+                            Add to Cart
+                        </a>
+                    
+                
+
+                    <li class="right">
+                        <img src="https://i.ibb.co/TPPPvyY/heart.png" alt="" class="nav-img">
+                        <a href="../Wishlist/wishlist.html" class="nav-anchor">
+                            Liked</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </nav>
+
+
 
     <div class="hidden">
 
         <div class="shoping-main">
             <h2 class="Shoping">Men's Shoping Center</h2>
         </div>
-
-    
         <div class="main">
             <div class="slide"></div>
         </div>
 
-
         <div class="shoping-main">
             <h2 class="Shoping">Shirt For Shopping</h2>
         </div>
-
         <div class="F_anime_main">
             <div class="F_anime1">
+
                 <div class="wrapper">
-                    <div class="box-image">
-                        <img class="best" src="https://i.ibb.co/nDxkfyn/shirt1.jpg" alt="logo">
-                    </div>
                     <div class="txt">
                         <div class="product">
                             <img class="best-img" src="https://i.ibb.co/nDxkfyn/shirt1.jpg" alt="logo">
@@ -51,7 +191,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -60,9 +200,6 @@
 
 
                 <div class="wrapper">
-                    <div class="box-image">
-                        <img class="best" src="https://i.ibb.co/GHwNLh9/shirt2.jpg" alt="logo">
-                    </div>
                     <div class="txt">
                         <div class="product" ">
                     <img class=" best-img" src="https://i.ibb.co/GHwNLh9/shirt2.jpg" alt="logo">
@@ -76,17 +213,13 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
                 </div>
-
-
+                
                 <div class="wrapper">
-                    <div class="box-image">
-                        <img class="best" src="https://i.ibb.co/nz4qrt3/shirt3.webp" alt="logo">
-                    </div>
                     <div class="txt">
                         <div class="product"">
                     <img class=" best-img" src="https://i.ibb.co/nz4qrt3/shirt3.webp" alt="logo">
@@ -100,7 +233,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -109,10 +242,6 @@
 
             <div class="F_anime2">
                 <div class="wrapper">
-                    <div class="box-image">
-                        <img class="best" src="https://i.ibb.co/pQTbV23/shirt4.jpg" alt="logo">
-                    </div>
-
                     <div class="txt">
                         <div class="product"">
                     <img class=" best-img" src="https://i.ibb.co/pQTbV23/shirt4.jpg" alt="logo">
@@ -126,7 +255,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -137,9 +266,6 @@
 
 
                 <div class="wrapper">
-                    <div class="box-image">
-                        <img class="best" src="https://i.ibb.co/DD0QqHs/shirt5.jpg" alt="logo">
-                    </div>
                     <div class="txt">
                         <div class="product"">
                     <img class=" best-img" src="https://i.ibb.co/DD0QqHs/shirt5.jpg" alt="logo">
@@ -153,7 +279,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -161,9 +287,6 @@
 
 
                 <div class="wrapper">
-                    <div class="box-image">
-                        <img class="best" src="https://i.ibb.co/ry6yGQr/shirt6.jpg" alt="logo">
-                    </div>
                     <div class="txt">
                         <div class="product"">
                     <img class=" best-img" src="https://i.ibb.co/ry6yGQr/shirt6.jpg" alt="logo">
@@ -177,7 +300,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -188,25 +311,12 @@
 
 
         <div id="bard">
-            <div class="rahul">
-                <div class="bre">
-                    <div class="imag">
-                        <img class="bst" src="https://i.ibb.co/jL2VNZV/img5.jpg" alt="logo">
-                    </div>
-                </div>
-            </div>
-
-
             <div class="bre1">
                 <div class="shoping-main">
                     <h2 class="Shoping">Lower For Shopping </h2>
                 </div>
 
                 <div class="wrapper">
-                    <div class="box-image">
-                        <img class="best" src="https://i.ibb.co/tZKRsNw/lower1.jpg" alt="logo">
-                    </div>
-
                     <div class="txt">
                         <div class="product"">
                             <img class=" best-img" src="https://i.ibb.co/tZKRsNw/lower1.jpg" alt="logo">
@@ -220,7 +330,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -229,9 +339,6 @@
 
 
                 <div class="wrapper">
-                    <div class="box-image">
-                        <img class="best" src="https://i.ibb.co/Lr1z07W/lower2.jpg" alt="logo">
-                    </div>
                     <div class="txt">
                         <div class="product">
                             <img class="best-img" src="https://i.ibb.co/Lr1z07W/lower2.jpg" alt="logo">
@@ -245,15 +352,12 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
                 </div>
                 <div class="wrapper">
-                    <div class="box-image">
-                        <img class="best" src="https://i.ibb.co/bHT87JG/lower3.jpg" alt="logo">
-                    </div>
                     <div class="txt">
                         <div class="product" onclick="clickProduct(this)">
                             <img class="best-img" src="https://i.ibb.co/bHT87JG/lower3.jpg" alt="logo">
@@ -267,7 +371,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -275,7 +379,7 @@
             </div>
         </div>
 
-
+        
         <div id="container">
             <div class="shoping-main">
                 <h2 class="Shoping">Jeanes For Shoping </h2>
@@ -297,7 +401,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -318,7 +422,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -339,7 +443,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -360,7 +464,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -384,7 +488,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -405,7 +509,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -426,7 +530,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -447,7 +551,7 @@
                                 <span>&#9733;</span>
                                 <span>&#9734;</span>
                             </div>
-                            <button class="buy-now-button">Buy Now</button>
+                            <button class="buy-now-button">Add To Card</button>
                             <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                         </div>
                     </div>
@@ -457,6 +561,7 @@
         </div>
 
 
+        
         <div class="goog">
             <div class="shoping-main">
                 <h2 class="Shoping">T-Shirt For Shopping</h2>
@@ -464,10 +569,8 @@
 
             <div class="neelu">
                 <div class="nagendra-yadav">
-                    <img class="img-contain" src="https://i.ibb.co/yWZxhRy/img1.jpg" alt="girl">
+                    <img class="img-contain" src="https://t4.ftcdn.net/jpg/05/96/62/65/240_F_596626503_jrzjZNYStDexiWxQFqO7oCh6M8PdMlJs.jpg" alt="girl">
                 </div>
-
-
                 <div class="info">
 
                     <div class="about">
@@ -485,7 +588,7 @@
                                         <span>&#9733;</span>
                                         <span>&#9734;</span>
                                     </div>
-                                    <button class="buy-now-button">Buy Now</button>
+                                    <button class="buy-now-button">Add To Card</button>
                                     <button class=" wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                                 </div>
                             </div>
@@ -504,7 +607,7 @@
                                         <span>&#9733;</span>
                                         <span>&#9734;</span>
                                     </div>
-                                    <button class="buy-now-button">Buy Now</button>
+                                    <button class="buy-now-button">Add To Card</button>
                                     <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                                 </div>
                             </div>
@@ -523,13 +626,12 @@
                                         <span>&#9733;</span>
                                         <span>&#9734;</span>
                                     </div>
-                                    <button class="buy-now-button">Buy Now</button>
+                                    <button class="buy-now-button">Add To Card</button>
                                     <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="about2">
                         <div class="t-first">
                             <img class="t-first-img" src="https://i.ibb.co/nLwVd6m/T-shirt-4.webp" alt="">
@@ -545,7 +647,7 @@
                                         <span>&#9733;</span>
                                         <span>&#9734;</span>
                                     </div>
-                                    <button class="buy-now-button">Buy Now</button>
+                                    <button class="buy-now-button">Add To Card</button>
                                     <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                                 </div>
                             </div>
@@ -565,7 +667,7 @@
                                         <span>&#9733;</span>
                                         <span>&#9734;</span>
                                     </div>
-                                    <button class="buy-now-button">Buy Now</button>
+                                    <button class="buy-now-button">Add To Card</button>
                                     <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                                 </div>
                             </div>
@@ -584,7 +686,7 @@
                                         <span>&#9733;</span>
                                         <span>&#9734;</span>
                                     </div>
-                                    <button class="buy-now-button">Buy Now</button>
+                                    <button class="buy-now-button">Add To Card</button>
                                     <button class="wishlist-button">Add to Wishlist<span>&#10084;</span></button>
                                 </div>
                             </div>

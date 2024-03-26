@@ -11,6 +11,8 @@ const Api=[
         price:1400,
         type:"Shirt"
     },
+
+
     {
         img:"https://i.ibb.co/nz4qrt3/shirt3.webp",
         rating:2.5,
@@ -136,6 +138,5 @@ const Api=[
         rating:4.1,
         price:300,
         type:"T-Shirt"
-    },
-
+    }
 ]

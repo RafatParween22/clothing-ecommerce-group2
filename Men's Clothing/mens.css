@@ -6,21 +6,392 @@
 
 body {
     overflow-x: hidden;
+    background: rgba(243, 243, 243);
 
 }
 
+
+/* Signip-page */
+
+.container {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .social-login {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .google-btn {
+    padding: 10px 20px;
+    background-color: #db4437;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google-btn:hover {
+    background-color: #c13506;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+
+
+/* login-page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .login-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    /* max-height: 800px; */
+    height: 330px;
+    width: 100%;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .forgot-password {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .social-login {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .google-btn {
+    padding: 10px 20px;
+    background-color: #db4437;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google-btn:hover {
+    background-color: #c13506;
+  }
+  
+  .login-account {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-account p {
+    margin: 0;
+  }
+  
+  .login-account a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-account a:hover {
+    text-decoration: underline;
+  }
+  button[type="submit"] {
+  padding: 12px 20px; 
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; 
+  transition: background-color 0.3s ease; 
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navigation-page */
+nav {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+    background-color: #2874f0; 
+    border-top-right-radius: 8px;
+}
+
+.main_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+	font-size: 16px; 
+}
+
+.nav-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 9px;
+}
+
+
+.nav-anchor {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-anchor:hover {
+    color: lightgray;
+}
+
+.nav-img {
+    width: 20px;
+    height: 20px;
+}
+
+.srch-btn {
+    display: flex;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+}
+
+.search-input {
+    padding: 8px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    background-color: #fff; 
+	margin-left: 5px;
+    width: 566px;
+
+}
+
+.right {
+    margin-left: auto; 
+}
+
+.search-bar-icon{
+    height: 31.5px;
+    width: 25px;
+    background-color: #fff; 
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+}
+
+@media (max-width: 768px) {
+    nav{
+        height: auto;
+        width: 100%;
+    }
+    .main_nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .right {
+        margin-left: 0; 
+    }
+
+    .srch-btn {
+        margin-left: 0;
+        margin-top: 10px; 
+    }
+
+    .search-input {
+        width: 100%; 
+        max-width: 100%; 
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .hidden{
+    margin-top: 3rem; 
+} 
 .shoping-main{
     width: 100vw; 
     height:15vh ;
     background: rgba(243, 243, 243);
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #625555;
 }
+
 
 .shoping{
     text-align: center;
 }
+
+
+
 .main {
     height: 75vh;
     width: 100vw;
@@ -52,22 +423,6 @@ body {
 @keyframes slider {
     5% {
         background-image: url(https://i.ibb.co/bFwktpz/img2.jpg);
-    }
-
-    15% {
-        background-image: url(https://i.ibb.co/84wH42b/img3.jpg);
-    }
-
-    30% {
-        background-image: url(https://i.ibb.co/gj1Vc9K/img4.jpg);
-    }
-
-    45% {
-        background-image: url(https://i.ibb.co/jL2VNZV/img5.jpg);
-    }
-
-    60% {
-        background-image: url(https://i.ibb.co/1vTs9Ts/img6.jpg);
     }
 
     75% {
@@ -103,7 +458,6 @@ body {
 
 
 .F_anime1,.F_anime2 {
-    margin-top: 1rem;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -138,30 +492,6 @@ body {
 
 
 
-
-
-.wrapper .box-image {
-    transform: rotate(0deg);
-    transition: all 0.5s ease-in-out;
-}
-
-
-
-
-
-
-.wrapper:hover .box-image {
-    transform: rotateY(90deg);
-}
-
-
-.wrapper:hover .txt {
-    transform: rotateY(0deg);
-
-}
-
-
-
 .txt {
     position: absolute;
     top: 0;
@@ -175,10 +505,6 @@ body {
     border-radius: 5%;
 }
 
-.txt {
-    transform: rotateY(90deg);
-    transition: all 0.5s ease-in-out;
-}
 
 .wrapper2:hover .txt {
     transform: rotateY(0deg);
@@ -229,6 +555,7 @@ body {
     border: none;
 }
 
+
 .buy-now-button {
     background-color: #B4D5D5;
     color: white;
@@ -245,25 +572,14 @@ body {
 
 
 
+
 #bard {
-    height: 196vh;
+    height: 110vh;
     width: 100vw;
     font-size: 10px;
     background: rgba(243, 243, 243);
-
-
 }
 
-.rahul {
-    height: 40%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: rgba(243, 243, 243);
-    position: relative;
-    cursor: pointer;
-}
 
 .bre {
     display: flex;
@@ -420,6 +736,8 @@ h1 {
 
 
 
+
+
 #testimonials {
     padding: 3rem 0;
     background: rgba(243, 243, 243);
@@ -515,10 +833,12 @@ footer {
 
 
 .products-container {
+    margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 1rem;
+    background-color: #64748B;
 }
 
 .product-card{
@@ -526,12 +846,13 @@ footer {
     padding: 1rem;
     width: 20rem;
     text-align: center;
+    border: 1px solid rgb(199, 180, 180);
 }
 
 .product-card img {
     border-radius: 1rem;
     max-width: 100%;
-    height: auto;
+    height: 15rem;
 }
 
 .buy-now-button {
@@ -554,8 +875,11 @@ footer {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
 
+@media only screen and (max-width: 768px) {
+    .hidden{
+        margin-top: 18rem;
+    }
     .shoping-main{
         height: auto;
         width: auto;
@@ -589,6 +913,7 @@ footer {
         height: auto;
         width: auto;
     }
+
 
     .wrapper {
         width: 100%;
@@ -699,6 +1024,11 @@ footer {
         margin-bottom: 1rem;
       }
 
+      footer{
+        margin-top: 40rem;
+        height: auto;
+        width: auto;
+    }
 
       .footer-container {
         flex-direction: column;
